@@ -21,6 +21,6 @@ inputs:
     description: The name of the cluster you're using
     required: true
   cmd:
-    description: The arguments that you want to pass through to the exec command
+    description: The arguments that you want to pass through to sh
     required: true
   
