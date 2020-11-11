@@ -26,6 +26,6 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: ${{ secrets.AWS_REGION }}
           cluster_name: ${{ secrets.CLUSTER_NAME }}
-          exec: kubectl set image --record deployment/pod-name pod-name=${{ steps.build.outputs.IMAGE_URL }}
+          args: kubectl set image --record deployment/pod-name pod-name=${{ steps.build.outputs.IMAGE_URL }}
       # --- #
 ```
